@@ -74,7 +74,7 @@ public void Player_GetKillEvent(Event event, const char[] name, bool dontBroadca
     int victim = GetClientOfUserId(GetEventInt(event, "userid"));
     int attacker = GetClientOfUserId(GetEventInt(event, "attacker"));
     /////
-    if(IsClientInGame(victim) && IsClientConnected(victim))
+    if(IsClientInGame(attacker) && IsClientConnected(attacker))
     {
     	char strTag[32];
     	
