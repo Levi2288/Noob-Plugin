@@ -30,9 +30,9 @@ public Plugin myinfo =
 
 public OnPluginStart()
 {	
-	Cvar_msg_color_red = CreateConVar("sm_hudtext_connectmessage_red", "255", "RGB Red to the display 1 msg style", _, true, 0.0, true, 255.0);
-	Cvar_msg_color_green = CreateConVar("sm_hudtext_connectmessage_green", "255", "RGB Green Color to the display 1 msg style", _, true, 0.0, true, 255.0);
-	Cvar_msg_color_blue	= CreateConVar("sm_hudtext_connectmessage_blue", "255", "RGB Blue Color to the display 1 msg style", _, true, 0.0, true, 255.0);
+	Cvar_msg_color_red = CreateConVar("sm_hudtext_noob_red", "255", "RGB Red to the display 1 msg style", _, true, 0.0, true, 255.0);
+	Cvar_msg_color_green = CreateConVar("sm_hudtext_noob_green", "255", "RGB Green Color to the display 1 msg style", _, true, 0.0, true, 255.0);
+	Cvar_msg_color_blue	= CreateConVar("sm_hudtext_noob_blue", "255", "RGB Blue Color to the display 1 msg style", _, true, 0.0, true, 255.0);
 	sm_noob_settag = CreateConVar("sm_noob_settag", "1", "Set Clantag on noob players?");
 	sm_noob_display = CreateConVar("sm_noob_display", "1", "Msg Dispaly type 1 = Hud msg, 2 = Alert msg, 3 = chat msg");
 	sm_noob_deaths = CreateConVar("sm_noob_deaths", "10", "Deaths without killing anyone to get statued as \"noob\"");
